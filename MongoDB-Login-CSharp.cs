@@ -11,9 +11,9 @@ string nome = input("Usuario: ");
 string senha = input("Senha: ");
 
 bool login_status = login(nome, senha); //Verifica se o nome e senha existe no MongoDB
-Console.WriteLine(login_status);
+Console.WriteLine(login_status); //Escreve o resultado da tentativa de login
 
-while (true) { } //Loop para o console nao fechar
+Console.ReadLine(); //ReadLine para o console nao fechar sozinho
 string input(string x)
 {
     Console.Write(x);
